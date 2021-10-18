@@ -1,5 +1,7 @@
 {
-  "name": "ionic-app-base",
-  "integrations": {},
+  "name": "Room Controller",
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
