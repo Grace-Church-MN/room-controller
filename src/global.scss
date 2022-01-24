@@ -24,3 +24,65 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+$screen-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px
+);
+
+.ion-color-toolbar {
+	--ion-color-base: var(--ion-color-toolbar);
+	--ion-color-base-rgb: var(--ion-color-toolbar-rgb);
+	--ion-color-contrast: var(--ion-color-toolbar-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-toolbar-contrast-rgb);
+	--ion-color-shade: var(--ion-color-toolbar-shade);
+	--ion-color-tint: var(--ion-color-toolbar-tint);
+}
+
+.ion-color-white {
+	--ion-color-base: var(--ion-color-white);
+	--ion-color-base-rgb: var(--ion-color-white-rgb);
+	--ion-color-contrast: var(--ion-color-white-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-white-contrast-rgb);
+	--ion-color-shade: var(--ion-color-white-shade);
+	--ion-color-tint: var(--ion-color-white-tint);
+}
+
+.ion-color-black {
+	--ion-color-base: var(--ion-color-black);
+	--ion-color-base-rgb: var(--ion-color-black-rgb);
+	--ion-color-contrast: var(--ion-color-black-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-black-contrast-rgb);
+	--ion-color-shade: var(--ion-color-black-shade);
+	--ion-color-tint: var(--ion-color-black-tint);
+}
+
+.ion-color-background {
+	--ion-color-base: var(--ion-color-background);
+	--ion-color-base-rgb: var(--ion-color-background-rgb);
+	--ion-color-contrast: var(--ion-color-background-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-background-contrast-rgb);
+	--ion-color-shade: var(--ion-color-background-shade);
+	--ion-color-tint: var(--ion-color-background-tint);
+}
+
+.ion-color-grace {
+	--ion-color-base: var(--ion-color-grace);
+	--ion-color-base-rgb: var(--ion-color-grace-rgb);
+	--ion-color-contrast: var(--ion-color-grace-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-grace-contrast-rgb);
+	--ion-color-shade: var(--ion-color-grace-shade);
+	--ion-color-tint: var(--ion-color-grace-tint);
+}
+
+.ion-color-facebook {
+	--ion-color-base: var(--ion-color-facebook);
+	--ion-color-base-rgb: var(--ion-color-facebook-rgb);
+	--ion-color-contrast: var(--ion-color-facebook-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-facebook-contrast-rgb);
+	--ion-color-shade: var(--ion-color-facebook-shade);
+	--ion-color-tint: var(--ion-color-facebook-tint);
+}

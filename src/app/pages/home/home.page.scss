@@ -1,0 +1,16 @@
+ion-card{
+	border-radius: 1em;
+	//margin-bottom: 2em;
+	ion-card-title{
+		text-align: center;
+	}
+	ion-card-content{
+		height: 250px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		ion-button{
+			margin-bottom: 1em;
+		}
+	}
+}

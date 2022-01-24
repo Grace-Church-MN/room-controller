@@ -1,0 +1,20 @@
+<ion-content>
+	<ion-grid style="height: 100%">
+		<ion-row class="ion-align-items-center ion-justify-content-center" style="height: 100%">
+			<ion-col size-sm="6" size-lg="4" *ngFor="let tv of tvs">
+				<ion-card>
+					<ion-card-header>
+						<ion-card-title>{{tv.Name}}</ion-card-title>
+					</ion-card-header>
+					<ion-card-content>
+						<ion-button *ngIf="tv.Functions.includes('Power')" (click)="sendCommand(tv.Address, 'power')" expand="block">Power</ion-button>
+						<ion-button *ngIf="tv.Functions.includes('Input')" (click)="sendCommand(tv.Address, 'input')" expand="block">Input</ion-button>
+						<ion-button *ngIf="tv.Functions.includes('Volume')" (click)="sendCommand(tv.Address, 'vol_up')" expand="block">Volume Up</ion-button>
+						<ion-button *ngIf="tv.Functions.includes('Volume')" (click)="sendCommand(tv.Address, 'vol_down')" expand="block">Volume Down</ion-button>
+						<ion-button *ngIf="tv.Functions.includes('Volume')" (click)="sendCommand(tv.Address, 'mute')" expand="block">Mute</ion-button>
+					</ion-card-content>
+				</ion-card>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+</ion-content>

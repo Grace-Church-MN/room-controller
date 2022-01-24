@@ -1,0 +1,16 @@
+@import "../global.scss";
+.hiddenButton {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 5vh;
+	height: 5vh;
+	z-index: 10000;
+	background: transparent;
+	@media screen and (max-width: map-get($screen-breakpoints, sm)) {
+		& {
+			width: 7vh;
+			height: 7vh;
+		}
+	}
+}

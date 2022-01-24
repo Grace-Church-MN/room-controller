@@ -1,0 +1,43 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-title>Settings</ion-title>
+		<ion-buttons slot="end">
+			<ion-button color="dark" (click)="save()">
+				<ion-icon name="checkmark" slot="start"></ion-icon>
+			</ion-button>
+		</ion-buttons>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-grid>
+		<ion-row *ngFor="let tv of tvs; let i = index;">
+			<ion-col>
+				<ion-item>
+					<ion-label fixed>Name</ion-label>
+					<ion-input type="text" [(ngModel)]="tv.Name"></ion-input>
+				</ion-item>
+			</ion-col>
+			<ion-col>
+				<ion-item>
+					<ion-label fixed>Address</ion-label>
+					<ion-input type="text" [(ngModel)]="tv.Address"></ion-input>
+				</ion-item>
+			</ion-col>
+			<ion-col>
+				<ion-item>
+					<ion-label fixed>Function</ion-label>
+					<ion-input type="text" [(ngModel)]="tv.Functions"></ion-input>
+				</ion-item>
+			</ion-col>
+			<ion-fab-button class="remove-button" color="danger" (click)="removeTV(i)">
+				<ion-icon name="remove-outline"></ion-icon>
+			</ion-fab-button>
+		</ion-row>
+		<ion-item lines="none" class="add-button">
+			<ion-fab-button slot="end" size="small" (click)="addTV()">
+				<ion-icon name="add-outline"></ion-icon>
+			</ion-fab-button>
+		</ion-item>
+	</ion-grid>
+</ion-content>
